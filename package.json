@@ -1,0 +1,35 @@
+{
+  "name": "mapfile.js",
+  "version": "1.0.0",
+  "description": "Tool for analyze map files",
+  "main": "index.js",
+  "dependencies": {
+    "optimist": "^0.6.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.2",
+    "mocha": "^2.0.0",
+    "jshint": "^2.9.1",
+    "assert": "^1.4.1",
+    "optimist": "^0.6.0"
+  },
+  "scripts": {
+    "test": "mocha test",
+	"istanbul": "istanbul cover node_modules/mocha/bin/_mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emdc/mapfile.js.git"
+  },
+  "keywords": [
+    "mapfile",
+    "js",
+    "tool"
+  ],
+  "author": "Eduard Pikhno @ emdc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emdc/mapfile.js/issues"
+  },
+  "homepage": "https://github.com/emdc/mapfile.js#readme"
+}
