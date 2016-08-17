@@ -1,3 +1,5 @@
+'use strict';
+
 ;(function(isNode) {
 	let merge = (() => {
 	    var obj, name, copy,
@@ -203,7 +205,7 @@
 			}
 		};
 
-		this.nextLineHandler = function(mapObj, line) => {
+		this.nextLineHandler = function(mapObj, line) {
 			line = line.trim();
 			if(line[0] != '#' && line[0] != '*' && line[0] != '-' && line.length > 0) {
 				if(mapObj._analyzeFlags.analyzeSections == true) {
