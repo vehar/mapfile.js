@@ -2,19 +2,24 @@
 <head>
  <meta charset="utf-8">
  <title>IAR MapFile Weaver</title>
+ <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
 </head>
-<body style="background-color: #303030; color: #CCCCCC">
+<body>
  <div id="mapfileForm"></div>
  <div>
-  <p>Read only code:<span id="mapfile_common_roCode"></span></p>
-  <p>Read only data:<span id="mapfile_common_roData"></span></p>
-  <p>Read write data:<span id="mapfile_common_rwData"></span></p>
+  <p>Read only code: <span id="mapfile_common_roCode"></span></p>
+  <p>Read only data: <span id="mapfile_common_roData"></span></p>
+  <p>Read write data: <span id="mapfile_common_rwData"></span></p>
+  <p>Entries: code: <span id="mapfile_entries_code"></span></p>
+  <p>Entries: data: <span id="mapfile_entries_data"></span></p>
  </div>
+ <div id="charts" style="width:1500px; height:700px;"></div>
+
  <script src="http://www.amcharts.com/lib/3/amcharts.js"></script>
  <script src="http://www.amcharts.com/lib/3/serial.js"></script>
- <script src="http://www.amcharts.com/lib/3/themes/light.js"></script>
- <!--<script src="http://www.amcharts.com/lib/3/themes/chalk.js"></script>-->
- <script src="../mapfile.js"></script>
+ <script src="http://www.amcharts.com/lib/3/pie.js"></script>
+ <script src="http://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+ <script src="../index.js"></script>
  <script src="script/map_viewer.js"></script>
 </body>
 </html>
